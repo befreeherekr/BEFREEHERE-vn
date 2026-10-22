@@ -137,7 +137,7 @@
 
   .placeholder { background: rgba(255,214,102,.18); color: #f3d98a; padding: 0 4px; }
 
-  /* Chỉ dùng cho bản nháp */
+  /* Nút xem tiếng Hàn */
   .draft-toggle { position: fixed; right: 14px; bottom: 14px; z-index: 10; font: 400 12.5px 'Noto Sans KR', sans-serif; background: var(--paper); color: var(--ink); border: 0; padding: 8px 12px; border-radius: 100px; cursor: pointer; opacity: .9; }
 
   @media (prefers-reduced-motion: reduce) { .khan, .khan::after { animation: none; } }
@@ -170,7 +170,7 @@
 
       <div class="btns">
         <a class="btn" href="tel:+821089526368" data-ko="전화하기">Gọi điện</a>
-        <a class="btn-line" href="https://ig.me/m/bfh.vietnam" data-ko="인스타 메시지">Nhắn Instagram</a>
+        <a class="btn-line" href="https://www.instagram.com/bfh.vietnam/" target="_blank" rel="noopener" data-ko="인스타그램">Instagram</a>
       </div>
       <p class="note" data-ko="베트남어로 보내셔도 괜찮아요.">Bạn có thể nhắn bằng tiếng Việt.</p>
     </section>
@@ -234,8 +234,8 @@
       <h2 data-ko="연락하기">Liên hệ</h2>
       <div class="links">
         <a href="tel:+821089526368"><b data-ko="전화">Điện thoại</b>010-8952-6368</a>
-        <a href="https://instagram.com/bfh.vietnam"><b>Instagram</b>@bfh.vietnam</a>
-        <a href="https://www.facebook.com/profile.php?id=61595456997046"><b>Facebook</b>BEFREEHERE</a>
+        <a href="https://www.instagram.com/bfh.vietnam/" target="_blank" rel="noopener"><b>Instagram</b>@bfh.vietnam</a>
+        <a href="https://www.facebook.com/profile.php?id=61595456997046" target="_blank" rel="noopener"><b>Facebook</b>BEFREEHERE</a>
       </div>
     </section>
   </main>
@@ -247,8 +247,8 @@
   </footer>
 </div>
 
-<!-- Chỉ dùng cho bản nháp: xem bản dịch tiếng Hàn. Xóa trước khi đăng. -->
-<button class="draft-toggle" type="button" id="draftToggle">한국어로 보기 (시안용)</button>
+<!-- Nút xem bản dịch tiếng Hàn (giữ lại theo ý giám đốc) -->
+<button class="draft-toggle" type="button" id="draftToggle">한국어로 보기</button>
 <script>
   (function () {
     var btn = document.getElementById('draftToggle');
@@ -260,7 +260,7 @@
       els.forEach(function (el) { el.innerHTML = ko ? el.dataset.ko : el.dataset.vi; });
       document.body.classList.toggle('ko', ko);
       document.documentElement.lang = ko ? 'ko' : 'vi';
-      btn.textContent = ko ? 'Xem tiếng Việt (시안용)' : '한국어로 보기 (시안용)';
+      btn.textContent = ko ? 'Xem tiếng Việt' : '한국어로 보기';
     });
   })();
 </script>
