@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tang lễ theo truyền thống Việt Nam tại Hàn Quốc | BEFREEHERE</title>
+<meta name="description" content="Khi người thân qua đời ở Hàn Quốc, BEFREEHERE giúp gia đình tiễn đưa theo phong tục quê hương: đồ tang trắng, khăn tang, vàng mã và hỏa táng.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Noto+Sans+KR:wght@300;400&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  /* Màu và chữ giống trang BEFREEHERE tiếng Hàn */
+  :root {
+    --ink: #0e0d0b; --paper: #e8e2d9;
+    --gold: #c8a96e; --gold-dim: rgba(200,169,110,.14); --gold-line: rgba(200,169,110,.28);
+    --surf: #161410;
+    --sub: rgba(232,226,217,.66); --mute: rgba(232,226,217,.42);
+    --rule: rgba(201,185,154,.1);
+    --serif: 'Cormorant Garamond', serif;
+    --sans: 'Be Vietnam Pro', 'Noto Sans KR', sans-serif;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--sans); font-weight: 300;
+    background: var(--ink); color: var(--paper);
+    font-size: 16px; line-height: 1.85;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 200px; opacity: .55;
+  }
+  body.ko { font-family: 'Noto Sans KR', var(--sans); word-break: keep-all; }
+  p, h1, h2, h3, li { text-wrap: pretty; }
+  a { color: inherit; text-decoration: none; }
+  a:focus-visible, button:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+  ::selection { background: rgba(200,169,110,.2); }
+
+  .wrap { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; padding: 0 24px; }
+
+  /* Thanh trên cùng */
+  .nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; border-bottom: .5px solid rgba(201,185,154,.07); }
+  .logo { display: flex; flex-direction: column; gap: 3px; }
+  .logo-main { font-family: var(--serif); font-size: 19px; letter-spacing: .14em; color: var(--paper); }
+  .logo-sub { font-size: 10px; letter-spacing: .12em; color: var(--gold); line-height: 1; }
+  .nav a.call { font-size: 13.5px; color: var(--gold); border: .5px solid var(--gold-line); border-radius: 100px; padding: 10px 18px; }
+
+  /* Mở đầu */
+  .hero { padding: 40px 0 56px; }
+  .eyebrow { font-size: 11px; letter-spacing: .14em; color: var(--gold); margin-bottom: 22px; display: flex; align-items: center; gap: 10px; }
+  .eyebrow::before { content: ''; width: 28px; height: .5px; background: var(--gold); }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(36px, 9.6vw, 58px); line-height: 1.12; letter-spacing: -.005em;
+  }
+  body.ko .hero h1 { font-family: 'Noto Serif KR', serif; font-weight: 300; font-size: clamp(30px, 8vw, 46px); line-height: 1.35; }
+
+  /* Khăn tang: dải vải trắng trên nền tối */
+  .khan {
+    position: relative; height: 38px; margin: 26px -24px 0;
+    background:
+      repeating-linear-gradient(90deg, rgba(14,13,11,.05) 0 1px, transparent 1px 3px),
+      linear-gradient(180deg, #efeae2 0%, #e8e2d9 40%, #d6cfc4 64%, #ebe6de 100%);
+    transform-origin: left center;
+    animation: unroll 1.8s cubic-bezier(.2,.7,.2,1) .3s both;
+  }
+  .khan::after {
+    content: ""; position: absolute; right: 16%; top: 100%;
+    width: 18px; height: 52px; background: inherit;
+    transform: skewX(-6deg); transform-origin: top;
+    animation: drop 1s ease-out 1.9s both;
+  }
+  @keyframes unroll { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes drop { from { transform: skewX(-6deg) scaleY(0); } to { transform: skewX(-6deg) scaleY(1); } }
+
+  .lead { margin-top: 50px; color: var(--sub); font-size: 16px; }
+  .lead + .lead { margin-top: 14px; }
+  .lead strong { color: var(--paper); font-weight: 400; }
+
+  .btns { margin-top: 28px; display: flex; gap: 10px; }
+  .btn, .btn-line {
+    flex: 1; text-align: center; font-size: 14px; letter-spacing: .02em;
+    padding: 15px 10px; min-height: 50px; border-radius: 100px; white-space: nowrap; font-size: 15px;
+  }
+  .btn { background: var(--gold); color: var(--ink); font-weight: 400; }
+  .btn-line { border: .5px solid var(--gold-line); color: var(--gold); }
+  .note { margin-top: 14px; font-size: 13px; color: var(--mute); text-align: center; }
+
+  /* Các phần */
+  section.part { padding: 56px 0; border-top: .5px solid var(--rule); }
+  section.part h2 { font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1.25; margin-bottom: 24px; }
+  body.ko section.part h2 { font-family: 'Noto Serif KR', serif; font-weight: 300; font-size: 25px; }
+  section.part > p { color: var(--sub); }
+  section.part > p + p { margin-top: 14px; }
+
+  .honest { color: var(--sub); margin: -6px 0 26px; }
+  .offer { list-style: none; }
+  .offer li { padding: 20px 0; border-top: .5px solid var(--rule); }
+  .offer li:first-child { border-top: 0; padding-top: 4px; }
+  .offer b { display: block; font-weight: 400; font-size: 17px; color: var(--paper); }
+  .offer li > span { display: block; margin-top: 4px; color: var(--sub); font-size: 16px; }
+  .offer .opt { color: var(--gold); font-size: 12.5px; margin-left: 8px; font-weight: 300; }
+
+  ol.steps { list-style: none; counter-reset: s; }
+  ol.steps li { display: grid; grid-template-columns: 44px 1fr; padding: 18px 0; border-top: .5px solid var(--rule); counter-increment: s; }
+  ol.steps li:first-child { border-top: 0; }
+  ol.steps li::before { content: counter(s); font-family: var(--serif); font-size: 28px; font-weight: 300; color: var(--gold); line-height: 1.05; }
+  ol.steps b { display: block; font-weight: 400; color: var(--paper); }
+  ol.steps p { color: var(--sub); font-size: 16px; margin-top: 2px; }
+
+  .price, ol.steps li::before { font-variant-numeric: lining-nums; }
+  .price { font-family: var(--serif); font-size: 40px; font-weight: 300; color: var(--paper); line-height: 1.2; }
+  .price small { font-family: var(--sans); font-size: 14px; color: var(--mute); margin-left: 6px; }
+  .price-note { margin-top: 18px; }
+
+  .with { margin-top: 26px; padding: 4px 0 4px 18px; border-left: 1px solid var(--gold); color: var(--paper); font-weight: 300; }
+
+  .about { display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: start; }
+  .photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: center top; border: .5px solid rgba(201,185,154,.2); }
+  .about .name { font-family: var(--serif); font-size: 21px; color: var(--paper); line-height: 1.3; margin-bottom: 6px; }
+  .about p { color: var(--sub); }
+
+  .faq h3 { font-weight: 400; font-size: 16px; color: var(--paper); margin-top: 28px; line-height: 1.6; }
+  .faq h3:first-of-type { margin-top: 0; }
+  .faq p { color: var(--sub); font-size: 16px; margin-top: 6px; }
+
+  .links a { display: block; padding: 18px 0; border-top: .5px solid var(--rule); color: var(--sub); }
+  .links a:first-child { border-top: 0; }
+  .links a::after { content: ' →'; color: var(--gold); }
+  .links a b { font-weight: 400; color: var(--paper); margin-right: 8px; }
+
+  footer { padding: 40px 0 120px; border-top: .5px solid rgba(201,185,154,.08); font-size: 12px; color: rgba(232,226,217,.32); }
+  footer p { margin: 4px 0; }
+  footer a { color: rgba(232,226,217,.5); text-decoration: underline; text-underline-offset: 3px; }
+
+  .placeholder { background: rgba(255,214,102,.18); color: #f3d98a; padding: 0 4px; }
+
+  /* Chỉ dùng cho bản nháp */
+  .draft-toggle { position: fixed; right: 14px; bottom: 14px; z-index: 10; font: 400 12.5px 'Noto Sans KR', sans-serif; background: var(--paper); color: var(--ink); border: 0; padding: 8px 12px; border-radius: 100px; cursor: pointer; opacity: .9; }
+
+  @media (prefers-reduced-motion: reduce) { .khan, .khan::after { animation: none; } }
+  @media (min-width: 760px) {
+    .hero { padding-top: 100px; }
+    .khan { margin-left: 0; margin-right: calc(-50vw + 340px); }
+    .btns { max-width: 420px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="nav">
+    <a class="logo" href="#">
+      <span class="logo-main">BEFREEHERE</span>
+      <span class="logo-sub" data-ko="한국에서 치르는 베트남 장례">Tang lễ Việt tại Hàn Quốc</span>
+    </a>
+    <a class="call" href="tel:+821089526368" data-ko="전화하기">Gọi điện</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow" data-ko="한국 · 장례">Hàn Quốc · Tang lễ</p>
+      <h1 data-ko="한국에서 베트남 전통대로 치르는 장례">Tang lễ theo truyền thống Việt Nam tại Hàn Quốc</h1>
+      <div class="khan" aria-hidden="true"></div>
+
+      <p class="lead" data-ko="타국에서, 다른 언어로<br>가족을 보내는 일은 결코 쉽지 않으실 거예요.">Ở nơi đất khách, với một ngôn ngữ khác,<br>lo tang lễ cho người thân chắc chắn không dễ dàng.</p>
+      <p class="lead" data-ko="<strong>장례 중에 생기는 모든 일</strong>을<br>저희가 함께 알아보고 도와드릴게요.">Chúng tôi sẽ <strong>cùng bạn tìm hiểu và lo liệu mọi việc</strong> trong tang lễ.</p>
+
+      <div class="btns">
+        <a class="btn" href="tel:+821089526368" data-ko="전화하기">Gọi điện</a>
+        <a class="btn-line" href="https://ig.me/m/bfh.vietnam" data-ko="인스타 메시지">Nhắn Instagram</a>
+      </div>
+      <p class="note" data-ko="베트남어로 보내셔도 괜찮아요.">Bạn có thể nhắn bằng tiếng Việt.</p>
+    </section>
+
+    <section class="part">
+      <h2 data-ko="저희가 함께하는 것">Chúng tôi cùng bạn lo</h2>
+      <p class="honest" data-ko="고향과 100% 똑같이 할 수는 없어요. 하지만 베트남의 예를 최대한 갖추려고 노력할게요.">Chúng tôi không thể làm giống hoàn toàn như ở quê nhà. Nhưng chúng tôi sẽ cố gắng hết sức để giữ trọn lễ nghĩa Việt Nam.</p>
+      <ul class="offer">
+        <li><b data-ko="흰 상복과 흰 띠">Đồ tang trắng và khăn tang</b><span data-ko="고향에서처럼<br>흰 옷을 입고 흰 띠를 둘러요.">Mặc đồ trắng, chít khăn tang<br>như ở quê nhà.</span></li>
+        <li><b data-ko="종이 공물">Đốt vàng mã</b><span data-ko="화장 전에 고인께<br>종이 돈과 종이 옷을 태워드려요.">Đốt vàng mã cho người đã khuất<br>trước khi hỏa táng.</span></li>
+        <li><b data-ko="한국에서 화장">Hỏa táng tại Hàn Quốc</b><span data-ko="장례식장, 화장장, 대사관 서류를<br>저희가 챙겨요.">Chúng tôi lo giấy tờ với nhà tang lễ,<br>nơi hỏa táng và đại sứ quán.</span></li>
+        <li><b><span data-ko="유골을 고향으로">Đưa tro cốt về quê</span><span class="opt" data-ko="원하시면">nếu gia đình muốn</span></b><span data-ko="화장증명서 번역·공증 등<br>모셔 가는 준비를 도와드려요.">Giúp dịch, công chứng giấy tờ<br>để đưa tro cốt về Việt Nam.</span></li>
+        <li><b data-ko="보험과 서류 알아보기">Bảo hiểm và giấy tờ</b><span data-ko="받을 수 있는 보험이 있는지,<br>어떤 서류가 필요한지 함께 알아봐요.">Cùng bạn tìm hiểu bảo hiểm có thể nhận<br>và những giấy tờ cần chuẩn bị.</span></li>
+      </ul>
+    </section>
+
+    <section class="part">
+      <h2 data-ko="진행 순서">Các bước</h2>
+      <ol class="steps">
+        <li><div><b data-ko="연락하기">Liên hệ</b><p data-ko="전화나 메시지로 연락주세요.">Gọi điện hoặc nhắn tin cho chúng tôi.</p></div></li>
+        <li><div><b data-ko="가족·대사관과 연락">Gia đình và đại sứ quán</b><p data-ko="고향의 가족이 원하는 것을 확인하고<br>서류를 준비해요.">Hỏi mong muốn của gia đình ở quê<br>và chuẩn bị giấy tờ.</p></div></li>
+        <li><div><b data-ko="장례">Tang lễ</b><p data-ko="베트남 풍습대로 보내드려요.">Tiễn đưa theo phong tục Việt Nam.</p></div></li>
+        <li><div><b data-ko="화장">Hỏa táng</b><p data-ko="한국의 화장장에서 진행해요.">Thực hiện tại nơi hỏa táng ở Hàn Quốc.</p></div></li>
+        <li><div><b data-ko="고향으로 (원하시면)">Về quê (nếu gia đình muốn)</b><p data-ko="유골을 가족 곁으로 모셔요.">Đưa tro cốt về với gia đình.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="part">
+      <h2 data-ko="비용">Chi phí</h2>
+      <p class="price">4.000.000<small>won</small></p>
+      <p class="price-note" data-ko="한국 비프리히어 장례와 같은 가격에, 베트남 전통 예식이 더해져요.">Cùng mức giá với dịch vụ tang lễ của BEFREEHERE tại Hàn Quốc, có thêm các nghi lễ truyền thống Việt Nam.</p>
+      <p data-ko="시작하기 전에 비용을 분명하게 알려드려요.">Chúng tôi báo giá rõ ràng trước khi bắt đầu.</p>
+      <p data-ko="다른 업체를 소개하고 수수료를 받지 않아요.">Chúng tôi không nhận tiền hoa hồng khi giới thiệu nơi khác.</p>
+      <p class="with" data-ko="일하다 돌아가셨거나 보험이 있다면<br>장례비를 받을 수 있는지도 함께 알아봐 드려요.">Nếu người thân mất do tai nạn lao động hoặc có bảo hiểm, chúng tôi sẽ cùng bạn tìm hiểu xem có được hỗ trợ chi phí tang lễ không.</p>
+    </section>
+
+    <section class="part">
+      <h2 data-ko="저희는">Về chúng tôi</h2>
+      <div class="about">
+        <img class="photo" src="images/founder.webp" width="64" height="64" alt="Juhun Lee, BEFREEHERE">
+        <div>
+          <p class="name">Juhun Lee</p>
+          <p data-ko="비프리히어는 한국의 장례 회사예요. 호주와 한국에서 일한 장례지도사가 한국어와 영어로 직접 도와드려요.">BEFREEHERE là công ty tang lễ tại Hàn Quốc. Người tổ chức tang lễ đã làm việc tại Úc và Hàn Quốc, trực tiếp hỗ trợ bằng tiếng Hàn và tiếng Anh.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="part faq">
+      <h2 data-ko="자주 묻는 질문">Câu hỏi thường gặp</h2>
+      <h3 data-ko="한국어를 못 해도 되나요?">Tôi không nói được tiếng Hàn có được không?</h3>
+      <p data-ko="괜찮아요. 베트남어로 메시지를 보내주세요.">Được. Bạn có thể nhắn tin bằng tiếng Việt.</p>
+      <h3 data-ko="꼭 유골을 베트남으로 보내야 하나요?">Có bắt buộc đưa tro cốt về Việt Nam không?</h3>
+      <p data-ko="아니에요. 가족이 원하시는 대로 정하시면 돼요.">Không. Gia đình có thể tự quyết định.</p>
+      <h3 data-ko="베트남의 가족이 한국에 올 수 없으면요?">Gia đình ở Việt Nam không sang được thì sao?</h3>
+      <p data-ko="저희가 가족, 대사관과 연락해요.<br>원하시면 장례 모습을 사진과 영상으로 보내드릴 수 있어요.">Chúng tôi sẽ liên lạc với gia đình và đại sứ quán.<br>Nếu gia đình muốn, chúng tôi có thể gửi ảnh và video buổi tiễn đưa.</p>
+      <h3 data-ko="보험으로 장례비를 받을 수 있나요?">Bảo hiểm có hỗ trợ chi phí tang lễ không?</h3>
+      <p data-ko="상황마다 달라요.<br>일하다 돌아가셨는지, 어떤 보험이 있는지 함께 확인해 드려요.">Tùy từng trường hợp.<br>Chúng tôi sẽ cùng bạn kiểm tra nguyên nhân và các loại bảo hiểm đang có.</p>
+    </section>
+
+    <section class="part">
+      <h2 data-ko="연락하기">Liên hệ</h2>
+      <div class="links">
+        <a href="tel:+821089526368"><b data-ko="전화">Điện thoại</b>010-8952-6368</a>
+        <a href="https://instagram.com/bfh.vietnam"><b>Instagram</b>@bfh.vietnam</a>
+        <a href="https://www.facebook.com/profile.php?id=61595456997046"><b>Facebook</b>BEFREEHERE</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>BEFREEHERE</p>
+    <p data-ko="사업자등록번호: [번호] / 주소: [주소]">Mã số doanh nghiệp: <span class="placeholder">[số]</span> / Địa chỉ: <span class="placeholder">[địa chỉ]</span></p>
+    <p><span data-ko="회사 정보:">Thông tin công ty:</span> <a href="https://befreeherekr.com">befreeherekr.com</a></p>
+  </footer>
+</div>
+
+<!-- Chỉ dùng cho bản nháp: xem bản dịch tiếng Hàn. Xóa trước khi đăng. -->
+<button class="draft-toggle" type="button" id="draftToggle">한국어로 보기 (시안용)</button>
+<script>
+  (function () {
+    var btn = document.getElementById('draftToggle');
+    var els = document.querySelectorAll('[data-ko]');
+    var ko = false;
+    els.forEach(function (el) { el.dataset.vi = el.innerHTML; });
+    btn.addEventListener('click', function () {
+      ko = !ko;
+      els.forEach(function (el) { el.innerHTML = ko ? el.dataset.ko : el.dataset.vi; });
+      document.body.classList.toggle('ko', ko);
+      document.documentElement.lang = ko ? 'ko' : 'vi';
+      btn.textContent = ko ? 'Xem tiếng Việt (시안용)' : '한국어로 보기 (시안용)';
+    });
+  })();
+</script>
+</body>
+</html>
